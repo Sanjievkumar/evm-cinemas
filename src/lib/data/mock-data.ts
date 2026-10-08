@@ -22,7 +22,6 @@ export const navigationItems: NavItem[] = [
   { label: 'Coming Soon', href: '#coming-soon' },
   { label: 'Our Screens', href: '#screens' },
   { label: 'About', href: '#about' },
-  { label: 'Gallery', href: '#gallery' },
   { label: 'Contact', href: '#contact' },
 ];
 
