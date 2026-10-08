@@ -17,7 +17,7 @@ export function HeroContent() {
         <span>{cinemaInfo.state}</span>
       </div>
 
-      {/* 2. Main Headline: EXPERIENCE EVERY MOMENT */}
+      {/* 2. Main Headline: EXPERIENCE THE GRANDNESS */}
       <h1
         className="mt-4 sm:mt-6 opacity-0 animate-slide-in-left"
         style={{ animationDelay: '400ms', animationFillMode: 'forwards' }}
@@ -26,7 +26,7 @@ export function HeroContent() {
           EXPERIENCE
         </span>
         <span className="block text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight text-gradient-gold leading-[1.02] uppercase mt-1 sm:mt-2">
-          EVERY MOMENT
+          THE GRANDNESS.
         </span>
       </h1>
 

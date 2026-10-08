@@ -63,28 +63,17 @@ export function Header() {
           className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10 flex items-center justify-between"
           aria-label="Main navigation"
         >
-          {/* Logo / Brand — Matches EVM cyan ring branding */}
+          {/* Logo / Brand — Official EVM Cinemas Logo */}
           <Link
             href="/"
-            className="group flex items-center gap-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold rounded-sm"
+            className="group flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold rounded-sm"
             aria-label="EVM Cinemas — Home"
           >
-            {/* EVM Emblem / Cyan Ring */}
-            <div className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-full flex items-center justify-center border-2 border-brand-cyan/80 bg-brand-cyan/10 shadow-[0_0_15px_rgba(0,216,246,0.3)] group-hover:shadow-[0_0_20px_rgba(0,216,246,0.5)] transition-all">
-              <span className="text-xs sm:text-sm font-black tracking-tighter text-cinema-pure-white">
-                EVM
-              </span>
-              <div className="absolute inset-0 rounded-full border border-brand-cyan/40 animate-ping opacity-25 pointer-events-none" />
-            </div>
-
-            <div className="flex flex-col leading-tight">
-              <span className="text-lg sm:text-xl font-bold tracking-tight text-cinema-pure-white">
-                EVM
-              </span>
-              <span className="text-[0.55rem] sm:text-[0.6rem] font-semibold tracking-[0.25em] uppercase text-cinema-gray-300">
-                Cinemas
-              </span>
-            </div>
+            <img
+              src="/images/brand/evm-logo.png"
+              alt="EVM Cinemas Logo"
+              className="h-8 sm:h-10 w-auto object-contain transition-transform group-hover:scale-105"
+            />
           </Link>
 
           {/* Desktop Navigation Links */}

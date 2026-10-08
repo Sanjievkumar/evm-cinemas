@@ -10,14 +10,12 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-10 py-12 sm:py-16 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
-            <Link href="/" aria-label="EVM Cinemas — Home" className="inline-flex items-center gap-3">
-              <span className="w-10 h-10 rounded-full flex items-center justify-center border-2 border-brand-cyan/80 bg-brand-cyan/10 text-xs font-black text-cinema-pure-white">
-                EVM
-              </span>
-              <span className="flex flex-col leading-tight">
-                <span className="text-xl font-bold tracking-tight text-cinema-pure-white">EVM</span>
-                <span className="text-[0.6rem] font-semibold tracking-[0.25em] uppercase text-cinema-gray-300">Cinemas</span>
-              </span>
+            <Link href="/" aria-label="EVM Cinemas — Home" className="inline-flex items-center">
+              <img
+                src="/images/brand/evm-logo.png"
+                alt="EVM Cinemas Logo"
+                className="h-10 w-auto object-contain"
+              />
             </Link>
             <p className="mt-4 text-sm text-cinema-gray-400 max-w-xs">{cinemaInfo.description}</p>
           </div>
