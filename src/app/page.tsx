@@ -18,7 +18,7 @@ export default function HomePage() {
       <TwoScreens />
       <LegacySection />
       <LocationSection />
-      <Gallery />
+      {/* <Gallery /> — Temporarily disabled until gallery assets are ready */}
       <Contact />
     </>
   );

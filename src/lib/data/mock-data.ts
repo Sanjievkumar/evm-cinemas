@@ -388,6 +388,7 @@ export const screenDetails: ScreenDetail[] = [
     audio: 'Dolby Atmos Spatial Audio',
     seating: 'Luxury Ergonomic Plush Seating',
     description: 'Our flagship auditorium bringing together dual 4K laser projection and full Dolby Atmos spatial surround sound for an unforgettable viewing experience.',
+    imageUrl: '/images/screens/screen-01-dolby.jpg',
     specs: [
       { label: 'PROJECTION', value: '4K LASER' },
       { label: 'AUDIO', value: 'DOLBY ATMOS' },
@@ -405,6 +406,7 @@ export const screenDetails: ScreenDetail[] = [
     audio: 'Dolby Atmos Surround Sound',
     seating: 'Premium Stadium Seating',
     description: 'A refined viewing environment featuring ultra-sharp 4K projection and enveloping Dolby Atmos surround sound.',
+    imageUrl: '/images/screens/screen-02-4k.jpg',
     specs: [
       { label: 'PROJECTION', value: '4K ULTRA HD' },
       { label: 'AUDIO', value: 'DOLBY ATMOS' },
@@ -415,29 +417,30 @@ export const screenDetails: ScreenDetail[] = [
 ];
 
 // =============================================================================
-// Legacy Milestones ("Our Legacy" — Page 6 of Mockup)
-// PLACEHOLDER COPY ONLY — no real EVM history has been supplied yet.
-// Replace with CMS / client-provided content. Years are intentionally generic.
+// Legacy Milestones ("Our Legacy" — 1982, 2009, TODAY)
 // =============================================================================
 
 export const legacyMilestones: LegacyMilestone[] = [
   {
-    year: 'CHAPTER 01',
-    title: 'THE STORY',
-    subtitle: 'PLACEHOLDER — EVM STORY',
-    description: 'Placeholder copy. The EVM Cinemas story will be supplied by the client and managed through the CMS.',
+    year: '1982',
+    title: 'THE BEGINNING',
+    subtitle: 'HERITAGE & ORIGINS',
+    description: 'EVM Cinemas opened its doors in 1982, establishing a rich heritage of entertainment and landmark cinema experience.',
+    imageUrl: '/images/legacy/legacy-1982.jpg',
   },
   {
-    year: 'CHAPTER 02',
-    title: 'THE THEATRE LEGACY',
-    subtitle: 'PLACEHOLDER — THEATRE LEGACY',
-    description: 'Placeholder copy. The history of the theatre in Tiruchengode will be added once confirmed.',
+    year: '2009',
+    title: 'A NEW CHAPTER',
+    subtitle: 'MODERNIZATION & EXPANSION',
+    description: 'In 2009, EVM Cinemas unveiled a new chapter with upgraded projection technology and architectural refinements.',
+    imageUrl: '/images/legacy/legacy-2009.jpg',
   },
   {
-    year: 'CHAPTER 03',
-    title: 'THE CINEMA TODAY',
-    subtitle: 'PLACEHOLDER — MODERN EXPERIENCE',
-    description: 'Placeholder copy. EVM Cinemas\u2019 commitment to cinema and the modern experience will be described here.',
+    year: 'TODAY',
+    title: 'AHEAD OF ITS TIME',
+    subtitle: 'FLAGSHIP DOLBY CINEMA',
+    description: 'Today, EVM Cinemas stands ahead of its time, delivering dual 4K laser projection and Dolby Atmos spatial surround sound.',
+    imageUrl: '/images/legacy/legacy-today.jpg',
   },
 ];
 

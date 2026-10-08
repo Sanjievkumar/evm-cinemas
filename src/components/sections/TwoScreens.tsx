@@ -48,17 +48,25 @@ export function TwoScreens() {
             >
               {/* Screen Visual Header Banner */}
               <div className="relative aspect-[16/9] w-full bg-[#101520] overflow-hidden">
-                {/* Central Technology Visual Display */}
-                <div className="absolute inset-0 bg-gradient-to-br from-[#162030] via-[#0E1522] to-[#06090F] flex flex-col items-center justify-center p-6 text-center">
-                  <div className="w-full max-w-sm h-28 sm:h-32 rounded-xl border-2 border-brand-cyan/70 bg-brand-cyan/10 flex flex-col items-center justify-center p-4 shadow-[0_0_30px_rgba(0,216,246,0.3)] transition-transform group-hover:scale-105">
-                    <span className="text-2xl sm:text-3xl font-black tracking-widest text-cinema-pure-white uppercase drop-shadow-md">
-                      {screen.title}
-                    </span>
-                    <span className="text-[0.62rem] font-bold tracking-[0.2em] text-brand-cyan uppercase mt-1">
-                      {screen.projection} &middot; {screen.audio}
-                    </span>
+                {screen.imageUrl ? (
+                  <img
+                    src={screen.imageUrl}
+                    alt={screen.title}
+                    className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  />
+                ) : (
+                  /* Central Technology Visual Display Fallback */
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#162030] via-[#0E1522] to-[#06090F] flex flex-col items-center justify-center p-6 text-center">
+                    <div className="w-full max-w-sm h-28 sm:h-32 rounded-xl border-2 border-brand-cyan/70 bg-brand-cyan/10 flex flex-col items-center justify-center p-4 shadow-[0_0_30px_rgba(0,216,246,0.3)] transition-transform group-hover:scale-105">
+                      <span className="text-2xl sm:text-3xl font-black tracking-widest text-cinema-pure-white uppercase drop-shadow-md">
+                        {screen.title}
+                      </span>
+                      <span className="text-[0.62rem] font-bold tracking-[0.2em] text-brand-cyan uppercase mt-1">
+                        {screen.projection} &middot; {screen.audio}
+                      </span>
+                    </div>
                   </div>
-                </div>
+                )}
 
                 {/* Top-Left Badge: SCREEN 01 / SCREEN 02 */}
                 <div className="absolute top-4 left-4 z-10 px-3 py-1 rounded-full bg-black/85 border border-brand-cyan/70 text-[0.65rem] font-bold text-brand-cyan uppercase tracking-wider backdrop-blur-md">

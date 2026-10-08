@@ -61,26 +61,18 @@ export function LocationSection() {
             </div>
           </div>
 
-          {/* Right Column: Map Placeholder Card */}
-          <div className="group relative aspect-[4/3] w-full rounded-2xl border border-[#273244] bg-gradient-to-br from-[#101722] via-[#0B0F17] to-[#06080D] overflow-hidden flex flex-col items-center justify-center p-6 text-center shadow-2xl transition-all duration-300 hover:border-brand-cyan/50">
-            {/* Vector Map Grid Texture */}
-            <div className="absolute inset-0 pointer-events-none opacity-20 group-hover:opacity-30 transition-opacity">
-              <svg className="w-full h-full text-brand-cyan" viewBox="0 0 400 300" fill="none">
-                <path d="M0 50 L400 50 M0 100 L400 100 M0 150 L400 150 M0 200 L400 200 M0 250 L400 250" stroke="currentColor" strokeWidth="0.5" />
-                <path d="M50 0 L50 300 M100 0 L100 300 M150 0 L150 300 M200 0 L200 300 M250 0 L250 300 M300 0 L300 300 M350 0 L350 300" stroke="currentColor" strokeWidth="0.5" />
-                <circle cx="200" cy="150" r="40" stroke="currentColor" strokeWidth="1" strokeDasharray="4 4" />
-              </svg>
-            </div>
+          {/* Right Column: Kochi Map Image Card */}
+          <div className="group relative aspect-[4/3] w-full rounded-2xl border border-[#273244] bg-[#0A0D14] overflow-hidden shadow-2xl transition-all duration-300 hover:border-brand-cyan/60">
+            <img
+              src="/images/location/kochi-map.jpg"
+              alt="EVM Cinemas Location Map — Kochi, Kerala"
+              className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+            />
 
-            <div className="relative z-10 w-14 h-14 rounded-full bg-brand-cyan/10 border border-brand-cyan/40 flex items-center justify-center mb-3 shadow-[0_0_20px_rgba(0,216,246,0.25)] group-hover:scale-110 transition-transform">
-              <svg className="w-7 h-7 text-brand-cyan" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 6.75V15m6-6v8.25m.503-14.988l4.5 1.95a1.125 1.125 0 01.622 1.01v10.53a1.125 1.125 0 01-1.498 1.034l-4.226-1.408a1.125 1.125 0 00-.706 0l-4.526 1.509a1.125 1.125 0 01-.706 0L2.498 19.34a1.125 1.125 0 01-.622-1.01V7.8a1.125 1.125 0 01.503-.941l4.5-2.25a1.125 1.125 0 011.006 0l4.5 2.25a1.125 1.125 0 001.006 0z" />
-              </svg>
+            {/* Location Tag Overlay */}
+            <div className="absolute bottom-4 left-4 z-10 px-3.5 py-1.5 rounded-full bg-black/85 border border-brand-cyan/60 text-[0.65rem] font-bold text-brand-cyan uppercase tracking-wider backdrop-blur-md shadow-lg">
+              OUR LOCATION &middot; KOCHI, KERALA
             </div>
-
-            <span className="relative z-10 text-xs font-semibold tracking-[0.2em] uppercase text-cinema-gray-400 border border-white/10 px-3.5 py-1.5 rounded-full bg-black/50 backdrop-blur-md">
-              MAP — TO BE CONNECTED
-            </span>
           </div>
         </div>
       </div>

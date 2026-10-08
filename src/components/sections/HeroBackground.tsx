@@ -10,7 +10,7 @@ interface HeroBackgroundProps {
  * Renders a full-bleed visual structure with night sky atmosphere and cyan pillar lighting.
  * Designed cleanly as temporary placeholder media so a real photograph/video can replace it.
  */
-export function HeroBackground({ src }: HeroBackgroundProps) {
+export function HeroBackground({ src = '/images/hero/hero-building.jpg' }: HeroBackgroundProps) {
   return (
     <div className="absolute inset-0 overflow-hidden select-none pointer-events-none" aria-hidden="true">
       {src ? (
